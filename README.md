@@ -78,6 +78,7 @@ examples/
 - Feishu field notes
 - demo cases
 - repo about text for GitHub setup
+- quickstart and use-case notes
 
 ## Not included
 

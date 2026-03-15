@@ -1,22 +1,34 @@
 # HR Agent Team
 
-A minimal prototype for an HR Agent Team workflow.
+A minimal prototype for a small HR Agent Team workflow.
 
-This repo only covers the smallest working loop we have already run through:
+This repo captures the smallest working loop that is already running:
 
-1. Resume Screener
-2. Candidate Coordinator
-3. Hiring Ops Tracker
-4. Feishu table update
+- Resume Screener
+- Candidate Coordinator
+- Hiring Ops Tracker
+- Feishu table update
 
-Current goal:
-- keep the workflow small
-- make prompts and templates usable
-- document fixed rules and demo cases
-- provide a clean prototype before moving into the company Git repo
+It is **not** a full ATS, HRMS, or recruiting platform.
+It is a lightweight prototype for a working hiring loop.
 
-This is **not** a full ATS, HRMS, or recruiting platform.
-It is a lightweight prototype for a working HR Agent Team loop.
+## What is already working
+
+### 1) Resume Screener
+Handles first-pass screening for incoming resumes.
+
+### 2) Candidate Coordinator
+Handles only 3 actions:
+- request-more-info message
+- interview scheduling message
+- candidate reply summary
+
+### 3) Hiring Ops Tracker
+Handles only 4 actions:
+- current stage
+- current owner
+- next step
+- blocked / timeout status
 
 ## Current workflow
 
@@ -26,19 +38,55 @@ Resume in
 → Hiring Ops Tracker  
 → Feishu update
 
+## Fixed rules in this prototype
+
+### Stage fields
+- 待补资料
+- 待约初面
+- 待面试反馈
+- 待继续推进
+- 待归档
+- 已暂停
+- 已转岗
+
+### Status fields
+- 正常推进
+- 临近超时
+- 已卡住
+
+### Time rules
+- within 24 hours → 正常推进
+- 24–48 hours → 临近超时
+- over 48 hours → 已卡住
+
+## Repo structure
+
+```text
+agents/
+  resume-screener/
+  candidate-coordinator/
+  hiring-ops-tracker/
+docs/
+examples/
+```
+
 ## Included in this repo
 
 - final prompts for 3 agents
-- minimal input/output templates
-- Feishu field and workflow notes
-- fixed stage/status rules
-- 1–2 demo cases
+- minimal templates
+- fixed workflow and rules
+- Feishu field notes
+- demo cases
 
 ## Not included
 
 - full ATS
 - permission system
-- dashboards
-- complex workflows
+- dashboard
+- complex workflow engine
 - independent bots
 - company-internal structure
+
+## Why this repo exists
+
+This repo is a clean public prototype backup before moving the work into the company Git team.

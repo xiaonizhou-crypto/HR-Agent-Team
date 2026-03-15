@@ -4,7 +4,7 @@
 
 A minimal prototype for a small HR Agent Team workflow.
 
-This repo captures the smallest working loop that is already running:
+This repo captures a working hiring loop that is already running end to end:
 
 - Resume Screener
 - Candidate Coordinator
@@ -12,7 +12,7 @@ This repo captures the smallest working loop that is already running:
 - Feishu table update
 
 It is **not** a full ATS, HRMS, or recruiting platform.
-It is a lightweight prototype for a working hiring loop.
+It is a lightweight prototype for a real, already-tested hiring loop.
 
 ## What is already working
 
@@ -95,6 +95,7 @@ examples/
 ## Why this repo exists
 
 This repo is a clean public prototype backup before moving the work into the company Git team.
+It keeps the current minimum loop in one place: prompts, templates, rules, examples, and workflow notes.
 
 ## Preview asset
 

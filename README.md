@@ -2,9 +2,9 @@
 
 ![HR Agent Team cover](assets/repo-cover.svg)
 
-A minimal prototype for a small HR Agent Team workflow.
+A minimal OpenClaw skill prototype for a small HR Agent Team workflow.
 
-This repo captures a working hiring loop that is already running end to end:
+This repo now captures that loop in an OpenClaw skill-friendly structure:
 
 - Resume Screener
 - Candidate Coordinator
@@ -64,18 +64,19 @@ Resume in
 ## Repo structure
 
 ```text
-agents/
-  resume-screener/
-  candidate-coordinator/
-  hiring-ops-tracker/
+SKILL.md
+references/
+assets/
 docs/
 examples/
+agents/
 ```
 
 ## Included in this repo
 
-- final prompts for 3 agents
-- minimal templates
+- SKILL.md for OpenClaw skill loading
+- reference docs for 3 sub-capabilities
+- final prompts and minimal templates
 - fixed workflow and rules
 - Feishu field notes
 - demo cases

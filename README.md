@@ -81,7 +81,7 @@ agents/
 - Feishu field notes
 - demo cases
 - repo about text for GitHub setup
-- quickstart, use-case, and install/test notes
+- quickstart, install/test, smoke-test, and use-case notes
 - simple cover and screenshot assets
 
 ## Not included
